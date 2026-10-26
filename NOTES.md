@@ -22,9 +22,9 @@ probability for each label, are saved in `results.json`.
 ## Tools and models used
 
 - **Cloudflare Workers AI, `clef` model:** classified the comments.
-- **Claude Code (Claude Opus 5.5):** created the local copy of the repo, wrote `classify.py` and
+- **Claude Code (Claude Opus 5.5):** wrote `classify.py` and
   the HTML page, ran the classification, and committed and pushed the code.
-- **Me:** checked every label by hand and wrote `MISTAKES.md` myself, without AI.
+- **Me:** checked every label by hand and wrote `MISTAKES.md`.
 
 ## How I found the task
 
