@@ -20,11 +20,20 @@ The program sends each comment to Clef together with its author name and forum t
 usernames like `AssignmentGuru_99` can count as a spam signal. Raw answers, including the
 probability for each label, are saved in `results.json` and `results-v2.json`.
 
-For step 7 (`comments-v2.json`) I improved the label descriptions (`QUESTION_V2` in
-`classify.py`): quoting offensive text to discuss it, or blunt criticism of someone's work,
-counts as acceptable; a genuine link or phone number is not spam; and spam includes leaked exam
-papers and adverts phrased as friendly tips. The first set still uses the original criteria.
-When I did steps 1 to 6, the README did not name a specific Clef model, so I used `clef` there too.
+When I did steps 1 to 6, the README did not name a specific Clef model, so I used `clef` there.
+
+## Second run (step 7)
+
+- **Input:** `comments-v2.json`, copied from the task repository (100 harder comments).
+- **Model:** `clef`. Run with `python classify.py --v2`; output in `results-v2.html` and
+  `results-v2.json`.
+- **Criteria:** I improved the label descriptions for this set (`QUESTION_V2` in
+  `classify.py`). Quoting offensive text in order to discuss it, and blunt criticism of
+  someone's work (not the person), count as acceptable. A genuine link or phone number that
+  sells nothing is not spam. Spam includes leaked exam papers or answers, and adverts phrased
+  as friendly tips or replies. The first set still uses the original criteria.
+- **Result:** Clef labelled 72 comments acceptable, 15 spam and 13 toxic, and gave confidence
+  below 0.5 on 13 of them. My check of its labels is in `MISTAKES-v2.md`.
 
 ## Tools and models used
 
