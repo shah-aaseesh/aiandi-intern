@@ -49,3 +49,6 @@ It took me about 23 minutes, and it was a fairly easy task. Clef was new to me. 
 learned is that low confidence does not always mean the label is wrong: Clef was unsure about
 three comments that were clearly toxic, and it still labelled them correctly. Working with an
 AI assistant (Claude Code) was good.
+
+I could not finish step 7 in one go: I ran the program on 29 October, but then had to leave
+urgently, so I checked Clef's labels and completed it on 30 October.
