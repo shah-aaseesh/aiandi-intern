@@ -34,6 +34,7 @@ When I did steps 1 to 6, the README did not name a specific Clef model, so I use
   as friendly tips or replies. The first set still uses the original criteria.
 - **Result:** Clef labelled 72 comments acceptable, 15 spam and 13 toxic, and gave confidence
   below 0.5 on 13 of them. My check of its labels is in `MISTAKES-v2.md`.
+  Clef made 4 mistakes on this set; 2 of them I found borderline.
 
 ## Tools and models used
 
